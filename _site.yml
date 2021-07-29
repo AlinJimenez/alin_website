@@ -1,0 +1,28 @@
+name: "alins-website"
+output_dir: "."
+navbar:
+  title: ""
+  left:
+   - text: "Home"
+     href: index.html
+   - text: "Portfolios"
+     menu:
+        - text: "Atmospheres"
+          href: atmospheres.html
+        - text: "Portraits"
+          href: portraits.html
+   - text: "Projects"
+     menu:
+        - text: "Bajio"
+          href: bajio.html
+        - text: "Daily Pleasures"
+          href: dailypleasures.html
+  right:
+  - icon: fab fa-instagram fa-lg
+    href: https://www.instagram.com/alin_mary_jg/
+  - icon: fab fa-flickr fa-lg
+    href: https://www.flickr.com/people/156923351@N07
+  - icon: fa-envelope fa-lg
+    href: contact.html
+
+

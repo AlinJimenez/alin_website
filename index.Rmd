@@ -1,0 +1,80 @@
+---
+title: "Alin Jiménez"
+
+---
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size:150%; font-family:courier;"
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+/* Style the header */
+header {
+  background-color: ;
+  padding: 30px;
+  text-align: left;
+  font-size: 25px;
+  color: #494645;
+}
+
+.title {
+  background-color: ;
+  padding: 30px;
+  text-align: left;
+  font-size: 35px;
+  color: #494645;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  background: ;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color:
+}
+
+/* Clear floats after the columns */
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+
+
+
+<br>
+<div class="aligncenter">
+<img src="./_pics/DAILY PLEASURES/19.jpg" style="width:75%">
+</div>
+
+</html>

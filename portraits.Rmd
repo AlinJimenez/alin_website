@@ -1,0 +1,172 @@
+---
+title: "Portraits"
+---
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style body */
+body {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size:150%; font-family:courier;"
+}
+
+
+div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Style the header */
+header {
+  background-color: ;
+  padding: 30px;
+  text-align: right;
+  font-size: 35px;
+  color: #494645;
+}
+
+.title {
+  background-color: ;
+  padding: 30px;
+  text-align: right;
+  font-size: 35px;
+  color: #494645;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+/* Collapsible text */
+.collapsible {
+  background-color: #EAE8E7;
+  color: #494645;
+  cursor: pointer;
+  padding: 5px;
+  width: ;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #F8F6F5;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 33%;
+  max-width: 50%;
+  padding: 0 3px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+</style>
+</head>
+
+
+<body>
+
+<!-- Photo Grid -->
+<div class="row"> 
+<div class="column">
+<img src="./_pics/PORTRAITS/1.jpg" style="width:100%">
+<img src="./_pics/PORTRAITS/3.jpg" style="width:100%">
+<img src="./_pics/PORTRAITS/5.jpg" style="width:100%">
+<img src="./_pics/PORTRAITS/7.jpg" style="width:100%">
+<img src="./_pics/PORTRAITS/9.jpg" style="width:100%">
+</div>
+
+<div class="column">
+<img src="./_pics/PORTRAITS/2.jpg" style="width:100%">
+<img src="./_pics/PORTRAITS/4.jpg" style="width:100%">
+<img src="./_pics/PORTRAITS/6.jpg" style="width:100%">
+<img src="./_pics/PORTRAITS/8.jpg" style="width:100%">
+<img src="./_pics/PORTRAITS/10.jpg" style="width:100%">
+</div>  
+</div>
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+</script>
+</body>
+</html>
